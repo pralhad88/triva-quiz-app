@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/triva-quiz-app/precache-manifest.b195919f5dae8e067d8df6a1de61c8e3.js"
+  "/triva-quiz-app/precache-manifest.d5857c7ab977ec566f70dd3231dda1bd.js"
 );
 
 self.addEventListener('message', (event) => {
