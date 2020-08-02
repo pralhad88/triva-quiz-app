@@ -34,7 +34,7 @@ class Options extends Component {
         return (
             <div>
                 {options.map((option, index) =>
-                    <Grid item xs={12}>
+                    
                     <MenuItem key={index} value={option}>
                         <Checkbox
                             checked={selectedOption.length && (selectedOption[0] == option) ? true : false}
@@ -42,9 +42,10 @@ class Options extends Component {
                             onChange={this.handelChange}
                             color="primary"
                         />
+                        <Grid item xs={12}>
                         <ListItemText primary={option} />
+                        </Grid>
                     </MenuItem>
-                    </Grid>
                 )}
             </div>
         )
