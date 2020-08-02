@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad930b6268f25d1c88001e0f54d3c0bc",
+    "revision": "5b5f26e3531c423fda55e3491bb7b036",
     "url": "/triva-quiz-app/index.html"
   },
   {
-    "revision": "149419bf584a3302147d",
-    "url": "/triva-quiz-app/static/css/main.28ec5a55.chunk.css"
+    "revision": "a338843654947c7d5611",
+    "url": "/triva-quiz-app/static/css/main.c833afbb.chunk.css"
   },
   {
     "revision": "bcdcf042673471ebf2bc",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/triva-quiz-app/static/js/2.647eef81.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "149419bf584a3302147d",
-    "url": "/triva-quiz-app/static/js/main.20110a14.chunk.js"
+    "revision": "a338843654947c7d5611",
+    "url": "/triva-quiz-app/static/js/main.4a0a5b42.chunk.js"
   },
   {
     "revision": "1111f0946b4aa294c977",
