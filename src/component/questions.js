@@ -127,13 +127,17 @@ class Questions extends Component {
                     </div>}
                 </CardContent>
                 <CardContent>
-                    <Grid item xs={12} container direction="row" justify="center" alignItems="center">
-                        {questionNumber == questions.length && questions.length && <div>
+                    {questionNumber == questions.length && questions.length && <Grid item xs={12}>
+                        <center>
                             <h3>Submit your quiz and get summary of your performance.</h3>
-                            <center><Button variant="contained" color="primary" onClick={this.OnSubmit}>
+                        </center>
+                        <center>
+                            <Button variant="contained" color="primary" onClick={this.OnSubmit}>
                                 Submit
-                        </Button></center></div>}
-                    </Grid>
+                            </Button>
+                        </center>
+                        </Grid>
+                    }
                 </CardContent>
             </Card>
             <InformAnswerStatus

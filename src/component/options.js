@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Checkbox from '@material-ui/core/Checkbox';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuItem from '@material-ui/core/MenuItem';
+import { Grid } from "@material-ui/core";
 
 class Options extends Component {
 
@@ -33,6 +34,7 @@ class Options extends Component {
         return (
             <div>
                 {options.map((option, index) =>
+                    <Grid item xs={12}>
                     <MenuItem key={index} value={option}>
                         <Checkbox
                             checked={selectedOption.length && (selectedOption[0] == option) ? true : false}
@@ -42,6 +44,7 @@ class Options extends Component {
                         />
                         <ListItemText primary={option} />
                     </MenuItem>
+                    </Grid>
                 )}
             </div>
         )
