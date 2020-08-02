@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/triva-quiz-app/static/css/main.ec8d30a3.chunk.css",
+    "main.js": "/triva-quiz-app/static/js/main.9a5ff073.chunk.js",
+    "main.js.map": "/triva-quiz-app/static/js/main.9a5ff073.chunk.js.map",
+    "runtime-main.js": "/triva-quiz-app/static/js/runtime-main.888fc139.js",
+    "runtime-main.js.map": "/triva-quiz-app/static/js/runtime-main.888fc139.js.map",
+    "static/js/2.72bc558d.chunk.js": "/triva-quiz-app/static/js/2.72bc558d.chunk.js",
+    "static/js/2.72bc558d.chunk.js.map": "/triva-quiz-app/static/js/2.72bc558d.chunk.js.map",
+    "index.html": "/triva-quiz-app/index.html",
+    "precache-manifest.b195919f5dae8e067d8df6a1de61c8e3.js": "/triva-quiz-app/precache-manifest.b195919f5dae8e067d8df6a1de61c8e3.js",
+    "service-worker.js": "/triva-quiz-app/service-worker.js",
+    "static/css/main.ec8d30a3.chunk.css.map": "/triva-quiz-app/static/css/main.ec8d30a3.chunk.css.map",
+    "static/js/2.72bc558d.chunk.js.LICENSE.txt": "/triva-quiz-app/static/js/2.72bc558d.chunk.js.LICENSE.txt",
+    "static/media/image.jpg": "/triva-quiz-app/static/media/image.7d41c607.jpg",
+    "static/media/right.jpeg": "/triva-quiz-app/static/media/right.897f7004.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.888fc139.js",
+    "static/js/2.72bc558d.chunk.js",
+    "static/css/main.ec8d30a3.chunk.css",
+    "static/js/main.9a5ff073.chunk.js"
+  ]
+}
