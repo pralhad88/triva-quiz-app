@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'; // imported Provider from react-redux fo
 import { SnackbarProvider } from 'notistack'; // imported SnackbarProvider for error handeling.
 
 import AppRouter from './appRoute/index';
-import Image from '../src/assets/image.jpg'
 import Header from './component/header';
 import configureStore from './store/index';
 
@@ -18,7 +17,6 @@ function App() {
       >
         <div
           className="App"
-          style={{backgroundImage: `url(${Image})` }}
         >
           <Header />
           <AppRouter />

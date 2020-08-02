@@ -31,7 +31,7 @@ function InformAnswerStatus({ dialogOpen2, handelClose, answerStatus }) { // inf
     return <div>
         <Dialog open={dialogOpen2}>
             <DialogContent>
-                <Card className={classes.root}>
+                <Card className={classes.root} elevation={6}>
                     <CardContent>
                         <p style={{ color: fontColor }}>
                             {Message}

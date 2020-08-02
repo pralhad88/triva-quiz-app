@@ -46,9 +46,11 @@ a {
   justify-content: center;
 }
 
-@media only screen and (max-width: 650px ) {
+
+@media only screen and (max-device-width: 650px ) {
   .App {
       background-position: center center;
+      background-size: auto 100%;
   }
 
   .App-content {
@@ -57,11 +59,13 @@ a {
   }
 
   .container {
-    top: 51%
+    top: 315px
   }
+
   .questions {
     padding: 10px;
     width: 300px;
     margin-top: 40px;
   }
 }
+

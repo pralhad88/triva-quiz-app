@@ -29,7 +29,7 @@ function ScoreCard({name, score, history}) { // It dipaly users score card.
         history.push('/')
     }
     return <div className="container">
-        <Card className={classes.root}>
+        <Card className={classes.root} elevation={6}>
             <CardActionArea>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2" >Hello, {name}</Typography>

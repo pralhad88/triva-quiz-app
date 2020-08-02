@@ -106,40 +106,69 @@ class Questions extends Component {
                     <h1>Loading.....</h1>
                 </DialogContent>
             </Dialog>
-            <Card className='questions'>
-                <CardContent>
-                    {questions.length > questionNumber && <div>
-                        <Grid item xs={12}>
-                            <Typography gutterBottom variant="h5" component="h2">{`Q. ${questionNumber + 1} ${questions[questionNumber].question}`}</Typography>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <h4>Select any one.</h4>
-                        </Grid>
-                        <Grid item container xs={12}>
-                            <Options
-                                options={questions[questionNumber].options}
-                                selectedOption={this.selectedOption}
-                            />
-                        </Grid>
-                        <Grid item xs={12} container direction="row" justify="center" alignItems="center">
-                            <Button variant="contained" color="primary" onClick={this.submitAnswer}>Submit your answer</Button>
-                        </Grid>
-                    </div>}
-                </CardContent>
-                <CardContent>
-                    {questionNumber == questions.length && questions.length && <Grid item xs={12}>
-                        <center>
-                            <h3>Submit your quiz and get summary of your performance.</h3>
-                        </center>
-                        <center>
-                            <Button variant="contained" color="primary" onClick={this.OnSubmit}>
-                                Submit
+            {questions.length > questionNumber &&
+                <Card className='questions' elevation={6} > 
+                    <CardContent>
+                        <div>
+                            <Grid item xs={12}>
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="h2"
+                                >
+                                    {`Q. ${questionNumber + 1} ${questions[questionNumber].question}`}
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <h4>Select any one.</h4>
+                            </Grid>
+                            <Grid item container xs={12}>
+                                <Options
+                                    options={questions[questionNumber].options}
+                                    selectedOption={this.selectedOption}
+                                />
+                            </Grid>
+                            <Grid item xs={12} container direction="row" justify="center" alignItems="center">
+                                <Button 
+                                    variant="contained"
+                                    color="primary"
+                                    onClick={this.submitAnswer}
+                                >
+                                    Submit your answer
+                                </Button>
+                            </Grid>
+                        </div>
+                    </CardContent>
+                    <CardContent>
+                        {questionNumber == questions.length && questions.length && <Grid item xs={12}>
+                            <center>
+                                <h3>Submit your quiz and get summary of your performance.</h3>
+                            </center>
+                            <center>
+                                <Button variant="contained" color="primary" onClick={this.OnSubmit}>
+                                    Submit
                             </Button>
-                        </center>
+                            </center>
                         </Grid>
-                    }
-                </CardContent>
-            </Card>
+                        }
+                    </CardContent>
+                </Card>
+            }
+            {questionNumber == questions.length && questions.length && <Card elevation={6}>
+                <CardContent>
+                    <Grid item xs={12}>
+                            <center>
+                                <h3>Submit your quiz and get summary of your performance.</h3>
+                            </center>
+                            <center>
+                                <Button variant="contained" color="primary" onClick={this.OnSubmit}>
+                                    Submit
+                            </Button>
+                            </center>
+                        </Grid>
+                    </CardContent>
+                </Card>
+            }
             <InformAnswerStatus
                 dialogOpen2={this.state.dialogOpen2}
                 handelClose={this.dispalyNextQuestion}

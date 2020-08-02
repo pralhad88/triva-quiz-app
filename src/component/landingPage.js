@@ -72,7 +72,7 @@ class SplashScreen extends Component {
     const { classes } = this.props;
     return (
       <div className="container">
-        <Card className={classes.root}>
+        <Card className={classes.root} elevation={6}>
           <CardActionArea>
             <CardContent className="center-content" >
               <Button variant="contained" color="primary" onClick={this.handleOpen}>Start Game</Button>
