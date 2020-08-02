@@ -26,7 +26,7 @@ function ScoreCard({name, score, history}) { // It dipaly users score card.
     }
     
     function endGame() { // If user don't want to play game again then this function is applicable.
-        history.push('/')
+        history.push('/triva-quiz-app')
     }
     return <div className="container">
         <Card className={classes.root} elevation={6}>
